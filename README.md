@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # DG Interns Hub
 
 A professional Job & Internship Landing Website designed for college students, freshers, and beginners looking for tech internships and entry-level opportunities.
@@ -152,3 +153,6 @@ docker compose down
 
 Built for **DG Interns Hub** — Week 7 Internship Submission.
 Empowering college students and freshers to launch real tech careers with confidence.
+=======
+# DG-INTERN-HUB-WEEK-7
+>>>>>>> d8dd8823ebe047bdd2b72b8e38dc5d32d51c3757
