@@ -33,10 +33,15 @@ const JobDetailsPage = ({ onApplyJob }) => {
         <div className="container text-center not-found-container">
           <h2>Internship Not Found</h2>
           <p>The internship opportunity you are looking for does not exist or may have been filled.</p>
-          <Link to="/jobs" className="btn btn-primary" style={{ marginTop: '1.5rem' }}>
+          <button 
+            type="button" 
+            className="btn btn-primary" 
+            style={{ marginTop: '1.5rem' }}
+            onClick={() => navigate('/jobs')}
+          >
             <ArrowLeft size={16} />
-            <span>Browse All Internships</span>
-          </Link>
+            <span>Back to Jobs</span>
+          </button>
         </div>
       </div>
     );
@@ -56,14 +61,18 @@ const JobDetailsPage = ({ onApplyJob }) => {
       <section className="details-top-bar">
         <div className="container">
           <div className="breadcrumbs-row">
-            <Link to="/jobs" className="back-link">
-              <ArrowLeft size={16} />
-              <span>Back to all internships</span>
-            </Link>
+            <button 
+              type="button" 
+              className="btn btn-secondary btn-sm back-to-jobs-btn" 
+              onClick={() => navigate('/jobs')}
+            >
+              <ArrowLeft size={15} />
+              <span>Back to Jobs</span>
+            </button>
             <div className="breadcrumb-trail">
               <Link to="/">Home</Link>
               <span className="trail-sep">/</span>
-              <Link to="/jobs">Internships</Link>
+              <Link to="/jobs">Jobs</Link>
               <span className="trail-sep">/</span>
               <span className="current-trail">{job.title}</span>
             </div>
@@ -135,7 +144,7 @@ const JobDetailsPage = ({ onApplyJob }) => {
 
               {/* Required Skills */}
               <div className="details-section-card">
-                <h2 className="details-section-heading">Required Skills & Competencies</h2>
+                <h2 className="details-section-heading">Required Skills</h2>
                 <div className="details-skills-pills">
                   {job.skills.map((skill, index) => (
                     <span key={index} className="skill-pill-large">
@@ -168,7 +177,7 @@ const JobDetailsPage = ({ onApplyJob }) => {
 
               {/* What You'll Learn */}
               <div className="details-section-card">
-                <h2 className="details-section-heading">What You'll Learn & Gain</h2>
+                <h2 className="details-section-heading">What You'll Learn</h2>
                 <ul className="details-bullet-list">
                   {job.whatYoullLearn.map((item, index) => (
                     <li key={index} className="details-bullet-item">
@@ -181,7 +190,7 @@ const JobDetailsPage = ({ onApplyJob }) => {
 
               {/* Benefits */}
               <div className="details-section-card">
-                <h2 className="details-section-heading">Perks & Benefits</h2>
+                <h2 className="details-section-heading">Benefits</h2>
                 <ul className="details-bullet-list">
                   {job.benefits.map((benefit, index) => (
                     <li key={index} className="details-bullet-item">
@@ -190,6 +199,26 @@ const JobDetailsPage = ({ onApplyJob }) => {
                     </li>
                   ))}
                 </ul>
+              </div>
+
+              {/* Bottom Navigation Row */}
+              <div className="details-bottom-actions-row">
+                <button 
+                  type="button" 
+                  className="btn btn-secondary" 
+                  onClick={() => navigate('/jobs')}
+                >
+                  <ArrowLeft size={16} />
+                  <span>Back to Jobs</span>
+                </button>
+                <button 
+                  type="button" 
+                  className="btn btn-primary btn-lg" 
+                  onClick={() => onApplyJob(job)}
+                >
+                  <span>Apply Now</span>
+                  <ArrowRight size={17} />
+                </button>
               </div>
             </div>
 
@@ -248,6 +277,15 @@ const JobDetailsPage = ({ onApplyJob }) => {
                   >
                     <span>Apply Now</span>
                     <ArrowRight size={17} />
+                  </button>
+
+                  <button
+                    type="button"
+                    className="btn btn-secondary sidebar-back-btn"
+                    onClick={() => navigate('/jobs')}
+                  >
+                    <ArrowLeft size={16} />
+                    <span>Back to Jobs</span>
                   </button>
 
                   <button

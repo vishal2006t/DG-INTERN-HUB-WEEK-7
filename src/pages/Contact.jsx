@@ -82,6 +82,12 @@ const Contact = () => {
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSent(true);
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
     }, 600);
   };
 
@@ -195,9 +201,9 @@ const Contact = () => {
                 {isSent ? (
                   <div className="contact-success-state">
                     <CheckCircle2 size={44} className="text-success" />
-                    <h4 className="success-state-title">Message Delivered!</h4>
+                    <h4 className="success-state-title">Message Sent Successfully!</h4>
                     <p className="success-state-desc">
-                      Thank you for contacting DG Interns Hub, <strong>{formData.name}</strong>. A confirmation has been routed to <strong>{formData.email}</strong>. Our student relations desk will follow up shortly.
+                      Thank you for contacting DG Interns Hub. Your message has been received and our student support desk will reply to your email shortly.
                     </p>
                     <button
                       type="button"

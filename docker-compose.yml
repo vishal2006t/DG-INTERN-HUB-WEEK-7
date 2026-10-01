@@ -1,11 +1,9 @@
-version: '3.8'
-
 services:
-  web:
+  frontend:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: dg-interns-hub-web
+    container_name: week7-job-landing
     ports:
       - "5173:5173"
     volumes:

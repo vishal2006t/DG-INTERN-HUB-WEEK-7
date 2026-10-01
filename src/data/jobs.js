@@ -13,6 +13,7 @@ export const jobsData = [
     openings: 3,
     featured: true,
     skills: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "Git", "REST APIs"],
+    description: "Build modern, accessible web interfaces and collaborate with senior engineers to deliver scalable client portals and landing pages.",
     shortDescription: "Build modern, accessible web interfaces and collaborate with senior engineers to deliver scalable client portals and landing pages.",
     about: "Nexora Cloud Solutions is a fast-growing cloud enterprise consultancy helping startups and mid-market organizations modernize their digital presence. As a Web Development Intern, you will join our front-of-the-glass engineering squad. You will work on real-world client dashboards, component libraries, and interactive marketing pages while learning industry-standard deployment pipelines.",
     responsibilities: [
@@ -21,6 +22,13 @@ export const jobsData = [
       "Integrate backend RESTful APIs and handle asynchronous data workflows cleanly.",
       "Participate in daily agile standups, sprint reviews, and peer code reviews.",
       "Test web applications across modern browsers and mobile devices to ensure high performance and usability."
+    ],
+    requirements: [
+      "Solid understanding of HTML5, CSS3, Flexbox, CSS Grid, and vanilla JavaScript.",
+      "Familiarity with version control using Git and GitHub workflows.",
+      "Basic understanding of asynchronous programming (Promises, async/await, Fetch API).",
+      "Good problem-solving mindset and eagerness to learn modern web standards.",
+      "Effective written and verbal communication skills."
     ],
     requiredSkills: [
       "Solid understanding of HTML5, CSS3, Flexbox, CSS Grid, and vanilla JavaScript.",
@@ -34,6 +42,12 @@ export const jobsData = [
       "Recent graduates seeking practical industry exposure before full-time roles.",
       "Available for a minimum duration of 3 consecutive months.",
       "Able to dedicate 30-40 hours per week in a remote work environment."
+    ],
+    learning: [
+      "Real-world enterprise frontend architecture and component design principles.",
+      "Hands-on experience with version control, pull request workflows, and code review conventions.",
+      "Performance optimization techniques including lazy loading, asset compression, and Core Web Vitals.",
+      "Professional agile development workflows using Jira and GitHub Projects."
     ],
     whatYoullLearn: [
       "Real-world enterprise frontend architecture and component design principles.",
@@ -57,12 +71,13 @@ export const jobsData = [
     workType: "Hybrid",
     duration: "6 Months",
     stipend: "₹25,000 / month",
-    category: "Web Development",
+    category: "React",
     postedDate: "1 day ago",
     applicantsCount: 92,
     openings: 2,
     featured: true,
     skills: ["React.js", "Hooks", "JavaScript (ES6+)", "Tailwind CSS", "Redux Toolkit", "REST APIs"],
+    description: "Contribute to enterprise SaaS products using React, building performant functional components, custom hooks, and dynamic data tables.",
     shortDescription: "Contribute to enterprise SaaS products using React, building performant functional components, custom hooks, and dynamic data tables.",
     about: "Apex Digital Labs builds high-performance SaaS tools for product analytics and workflow automation. In this role, you will be embedded directly within our core frontend engineering team. You will write clean, modular React functional components, implement client-side routing, optimize rendering performance, and connect frontend interfaces to real-time microservices.",
     responsibilities: [
@@ -71,6 +86,13 @@ export const jobsData = [
       "Integrate complex data endpoints and display dynamic charts, data grids, and filter views.",
       "Identify and eliminate unnecessary re-renders to ensure smooth 60fps UI performance.",
       "Write unit and component tests using Vitest and React Testing Library."
+    ],
+    requirements: [
+      "Strong practical command of React.js concepts (JSX, Component Lifecycle, Hooks like useState, useEffect, useMemo).",
+      "Proficiency in modern JavaScript (ES6+), arrow functions, destructuring, and modules.",
+      "Experience consuming RESTful APIs and managing loading, error, and empty states.",
+      "Comfortable with modern CSS frameworks or vanilla modular CSS.",
+      "Basic familiarity with TypeScript or strong desire to learn."
     ],
     requiredSkills: [
       "Strong practical command of React.js concepts (JSX, Component Lifecycle, Hooks like useState, useEffect, useMemo).",
@@ -84,6 +106,12 @@ export const jobsData = [
       "Fresh engineering graduates who have built full-stack or frontend portfolio projects.",
       "Able to work hybrid (2 days per week from our Bengaluru office).",
       "Available for a 6-month continuous internship."
+    ],
+    learning: [
+      "Advanced React patterns including compound components, custom hooks, and state machines.",
+      "State management at scale with Redux Toolkit and React Query.",
+      "CI/CD deployment pipelines, automated linting, and automated testing.",
+      "Direct weekly 1-on-1 mentorship with a Senior Frontend Architect."
     ],
     whatYoullLearn: [
       "Advanced React patterns including compound components, custom hooks, and state machines.",
@@ -113,6 +141,7 @@ export const jobsData = [
     openings: 4,
     featured: true,
     skills: ["Java", "Spring Boot", "Hibernate / JPA", "MySQL", "REST APIs", "Maven"],
+    description: "Work on backend banking microservices, designing secure Spring Boot REST endpoints, database schemas, and unit tests.",
     shortDescription: "Work on backend banking microservices, designing secure Spring Boot REST endpoints, database schemas, and unit tests.",
     about: "FinScale Technologies develops financial technology infrastructure powering digital payment gateways and core lending platforms. As a Java Development Intern, you will participate in architecting robust, transactional backend services. You'll gain exposure to high-concurrency architectures, relational database optimization, and secure financial data handling.",
     responsibilities: [
@@ -121,6 +150,13 @@ export const jobsData = [
       "Build secure RESTful endpoints with proper authentication, payload validation, and exception handling.",
       "Write comprehensive unit and integration tests using JUnit and Mockito.",
       "Assist in optimizing database queries and resolving backend bottlenecks."
+    ],
+    requirements: [
+      "Solid foundation in Core Java (OOP concepts, Collections Framework, Multithreading, Exceptions).",
+      "Hands-on exposure to Spring Boot, Spring Data JPA, and Maven / Gradle.",
+      "Good understanding of Relational Databases (MySQL or PostgreSQL) and SQL syntax.",
+      "Basic grasp of REST API principles and JSON structures.",
+      "Strong debugging skills and problem-solving aptitude."
     ],
     requiredSkills: [
       "Solid foundation in Core Java (OOP concepts, Collections Framework, Multithreading, Exceptions).",
@@ -134,6 +170,12 @@ export const jobsData = [
       "Candidates who have completed coursework in Object-Oriented Programming and Data Structures.",
       "Available for 4 months of full-time remote engagement.",
       "Self-motivated individuals with good remote accountability."
+    ],
+    learning: [
+      "Production-grade Spring Boot microservice architectures.",
+      "Database indexing, caching with Redis, and transaction management.",
+      "Industry API security practices including OAuth2 and JWT authentication.",
+      "Enterprise software testing frameworks and continuous integration."
     ],
     whatYoullLearn: [
       "Production-grade Spring Boot microservice architectures.",
@@ -163,6 +205,7 @@ export const jobsData = [
     openings: 3,
     featured: true,
     skills: ["Python 3", "FastAPI", "Django", "PostgreSQL", "Docker", "Pandas"],
+    description: "Develop high-throughput REST APIs, automated data ingestion pipelines, and background worker queues using Python.",
     shortDescription: "Develop high-throughput REST APIs, automated data ingestion pipelines, and background worker queues using Python.",
     about: "DataSphere Analytics is an intelligence platform delivering market insights to e-commerce and retail brands. In this internship, you will write asynchronous Python backends, orchestrate background job workers, and build ETL scripts that process gigabytes of structured data every day.",
     responsibilities: [
@@ -171,6 +214,13 @@ export const jobsData = [
       "Design database models, migrations, and complex queries using PostgreSQL.",
       "Containerize microservices using Docker for consistent local and staging environments.",
       "Implement automated error tracking, structured logging, and health check monitors."
+    ],
+    requirements: [
+      "Strong command of Python 3 syntax, data structures (lists, dicts, sets, tuples), and OOP.",
+      "Experience with a Python web framework (FastAPI, Flask, or Django).",
+      "Familiarity with SQL databases and ORMs like SQLAlchemy.",
+      "Basic understanding of containerization concepts using Docker.",
+      "Curiosity about data pipelines and automated backend workflows."
     ],
     requiredSkills: [
       "Strong command of Python 3 syntax, data structures (lists, dicts, sets, tuples), and OOP.",
@@ -184,6 +234,12 @@ export const jobsData = [
       "Candidates with demonstrable GitHub repositories showcasing Python projects.",
       "Available for a 3-month remote commitment starting immediately.",
       "Strong dedication to clean code standards and documentation."
+    ],
+    learning: [
+      "Building high-performance async APIs with FastAPI and Pydantic.",
+      "Celery task queues and Redis message brokers for background jobs.",
+      "Writing clean, typed Python adhering to PEP 8 standards.",
+      "Cloud deployment workflows and container orchestration."
     ],
     whatYoullLearn: [
       "Building high-performance async APIs with FastAPI and Pydantic.",
@@ -213,6 +269,7 @@ export const jobsData = [
     openings: 2,
     featured: false,
     skills: ["Python", "PyTorch", "TensorFlow", "Scikit-Learn", "NLP", "Hugging Face"],
+    description: "Assist in developing, fine-tuning, and evaluating natural language and predictive machine learning models on real datasets.",
     shortDescription: "Assist in developing, fine-tuning, and evaluating natural language and predictive machine learning models on real datasets.",
     about: "CognitiveAI Systems builds intelligent document processing and semantic search applications. As an AI/ML Intern, you will work alongside applied machine learning researchers to curate datasets, benchmark model architectures, fine-tune transformer models, and deploy scalable inference endpoints.",
     responsibilities: [
@@ -221,6 +278,13 @@ export const jobsData = [
       "Conduct systematic error analysis and ablation studies to improve model accuracy.",
       "Package ML models into lightweight FastAPI microservices for production inference.",
       "Document experimental results, evaluation metrics, and research findings."
+    ],
+    requirements: [
+      "Strong mathematical foundation in Linear Algebra, Calculus, Probability, and Statistics.",
+      "Proficiency in Python and numerical libraries (NumPy, Pandas, Matplotlib, Scikit-Learn).",
+      "Hands-on experience with deep learning frameworks (PyTorch or TensorFlow).",
+      "Familiarity with foundational NLP concepts (tokenization, embeddings, attention mechanisms).",
+      "Eagerness to read research papers and implement novel architectures."
     ],
     requiredSkills: [
       "Strong mathematical foundation in Linear Algebra, Calculus, Probability, and Statistics.",
@@ -234,6 +298,12 @@ export const jobsData = [
       "Master's students (M.Tech / MS / MCA) with an academic focus on Machine Learning.",
       "Candidates who have participated in Kaggle competitions or completed hands-on ML projects.",
       "Available for 6 months with 1 day/week hybrid collaboration in Hyderabad."
+    ],
+    learning: [
+      "Practical LLM fine-tuning techniques (LoRA, QLoRA) and prompt engineering workflows.",
+      "Vector databases (Milvus, Pinecone) for retrieval-augmented generation (RAG).",
+      "MLOps best practices using MLflow for experiment tracking and model registry.",
+      "Real-world model latency optimization and GPU deployment."
     ],
     whatYoullLearn: [
       "Practical LLM fine-tuning techniques (LoRA, QLoRA) and prompt engineering workflows.",
@@ -263,6 +333,7 @@ export const jobsData = [
     openings: 2,
     featured: false,
     skills: ["Figma", "User Research", "Wireframing", "Design Systems", "Prototyping", "Usability Testing"],
+    description: "Design intuitive user journeys, wireframes, interactive prototypes, and design system components for web and mobile products.",
     shortDescription: "Design intuitive user journeys, wireframes, interactive prototypes, and design system components for web and mobile products.",
     about: "Prism Studio Labs is a digital product studio partnering with high-growth tech ventures to create clean, human-centered software. As our UI/UX Design Intern, you will participate in the end-to-end design cycle: conducting user interviews, sketching low-fidelity concepts, crafting high-fidelity design systems, and testing interactive prototypes.",
     responsibilities: [
@@ -271,6 +342,13 @@ export const jobsData = [
       "Contribute to and maintain our company design system (components, tokens, typography scales).",
       "Conduct usability tests with real users and synthesize findings into actionable improvements.",
       "Work closely with frontend developers during handoff to ensure design fidelity."
+    ],
+    requirements: [
+      "Proficiency in Figma (Auto Layout, Component Variants, Styles, Variables).",
+      "Strong understanding of visual hierarchy, typography, color theory, and whitespace.",
+      "Familiarity with web accessibility guidelines (WCAG) and mobile design standards.",
+      "A portfolio showcasing at least 2 case studies demonstrating user-centric thinking.",
+      "Ability to articulate design decisions clearly and receive constructive feedback."
     ],
     requiredSkills: [
       "Proficiency in Figma (Auto Layout, Component Variants, Styles, Variables).",
@@ -284,6 +362,12 @@ export const jobsData = [
       "Self-taught designers with a strong, clean digital design portfolio.",
       "Available for 3 months full-time (remote).",
       "Passionate about clean, accessible software aesthetics."
+    ],
+    learning: [
+      "Enterprise design systems management and tokenization in Figma.",
+      "Quantitative and qualitative UX research methodologies.",
+      "Collaborative product discovery alongside product managers and engineers.",
+      "Design critique techniques and presentation skills."
     ],
     whatYoullLearn: [
       "Enterprise design systems management and tokenization in Figma.",
@@ -313,6 +397,7 @@ export const jobsData = [
     openings: 3,
     featured: false,
     skills: ["SQL", "Power BI", "Excel / Sheets", "Python", "Data Visualization", "Statistics"],
+    description: "Transform raw customer data into actionable executive dashboards, automated metric trackers, and commercial insights.",
     shortDescription: "Transform raw customer data into actionable executive dashboards, automated metric trackers, and commercial insights.",
     about: "MetricWave Insights helps B2B enterprise leaders make data-backed growth decisions. As a Data Analytics Intern, you will interrogate large datasets, write optimized SQL queries, construct interactive Power BI and Tableau dashboards, and communicate operational trends to cross-functional stakeholders.",
     responsibilities: [
@@ -321,6 +406,13 @@ export const jobsData = [
       "Perform exploratory data analysis using Python (Pandas, Seaborn) to uncover trend correlations.",
       "Audit data quality, resolve discrepancies, and standardize reporting definitions.",
       "Present weekly insight digests to business and marketing leadership teams."
+    ],
+    requirements: [
+      "Strong proficiency in SQL (Joins, CTEs, Aggregations, Window Functions).",
+      "Hands-on experience with Power BI, Tableau, or similar visualization tools.",
+      "Advanced Microsoft Excel skills (Pivot Tables, VLOOKUP/XLOOKUP, Power Query).",
+      "Fundamental understanding of business KPIs (churn, CAC, LTV, conversion rates).",
+      "Strong analytical mindset and detail orientation."
     ],
     requiredSkills: [
       "Strong proficiency in SQL (Joins, CTEs, Aggregations, Window Functions).",
@@ -334,6 +426,12 @@ export const jobsData = [
       "Enthusiastic freshers with coursework or certifications in SQL and Business Intelligence.",
       "Available for 4 months of hybrid internship (2 days in Gurugram).",
       "Clear communicators who can explain numbers in plain English."
+    ],
+    learning: [
+      "Modern analytics stacks including Snowflake and dbt (data build tool).",
+      "Techniques for stakeholder data storytelling and executive reporting.",
+      "Automating ETL workflows and dashboard scheduled refreshes.",
+      "Practical statistical hypothesis testing and cohort analysis."
     ],
     whatYoullLearn: [
       "Modern analytics stacks including Snowflake and dbt (data build tool).",
@@ -363,6 +461,7 @@ export const jobsData = [
     openings: 2,
     featured: false,
     skills: ["Network Security", "Vulnerability Assessment", "Linux", "Burp Suite", "OWASP Top 10", "Python"],
+    description: "Conduct vulnerability scans, inspect web security headers, assist in penetration testing, and document threat assessments.",
     shortDescription: "Conduct vulnerability scans, inspect web security headers, assist in penetration testing, and document threat assessments.",
     about: "CipherShield Security provides managed threat detection, penetration testing, and compliance certification for cloud-first enterprises. In this role, you will work alongside certified ethical hackers (CEH / OSCP) to analyze security postures, run automated vulnerability scans, and research emerging zero-day vulnerabilities.",
     responsibilities: [
@@ -371,6 +470,13 @@ export const jobsData = [
       "Analyze server logs to identify suspicious network traffic patterns and potential intrusion attempts.",
       "Document security findings and prepare actionable remediation guidance for developer teams.",
       "Write basic Python scripts to automate routine security checks and compliance scans."
+    ],
+    requirements: [
+      "Understanding of TCP/IP networking, DNS, SSL/TLS, and web application architectures.",
+      "Familiarity with the OWASP Top 10 security risks (SQLi, XSS, CSRF, IDOR).",
+      "Working knowledge of Linux CLI tools and scripting with Bash or Python.",
+      "Hands-on exposure to tools like Wireshark, Burp Suite, or OWASP ZAP.",
+      "High ethical standards and passion for defensive and offensive security."
     ],
     requiredSkills: [
       "Understanding of TCP/IP networking, DNS, SSL/TLS, and web application architectures.",
@@ -384,6 +490,12 @@ export const jobsData = [
       "Candidates who participate in TryHackMe, HackTheBox, or CTF challenges.",
       "Available for a 3-month full-time remote engagement.",
       "Self-disciplined learners with rigorous attention to detail."
+    ],
+    learning: [
+      "Hands-on application penetration testing workflows on real staging environments.",
+      "Security Information and Event Management (SIEM) log correlation.",
+      "Cloud security posture management across AWS and Azure environments.",
+      "Preparation pathways for recognized security certifications (Security+, CEH, eJPT)."
     ],
     whatYoullLearn: [
       "Hands-on application penetration testing workflows on real staging environments.",
@@ -404,6 +516,7 @@ export const jobsData = [
 export const categoriesList = [
   "All",
   "Web Development",
+  "React",
   "Java",
   "Python",
   "AI / ML",

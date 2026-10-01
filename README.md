@@ -1,38 +1,47 @@
-# DG Interns Hub - Job & Internship Discovery Platform
+# DG Interns Hub
 
-A modern, production-ready Job & Internship Landing Website designed for college students, freshers, and beginners looking for tech internships and entry-level opportunities.
+A professional Job & Internship Landing Website designed for college students, freshers, and beginners looking for tech internships and entry-level opportunities.
 
 ---
 
-## 🌟 Key Features
+## 📌 Project Description
 
-- **Genuine Professional Design**: Clean, light, corporate career-hub aesthetic (inspired by modern platforms like LinkedIn Jobs, AngelList/Wellfound, and Handshake). Free of AI dashboard cliches, excessive gradients, floating blobs, or gimmicky animations.
-- **Full Client-Side Routing**:
-  - `/` — Premium Landing Page with Hero, Platform Statistics, Featured Internships, Why Choose Us, 3-Step How It Works, and Final CTA.
-  - `/jobs` — Interactive Internship Directory with real-time keyword search, 8 domain categories, work-mode filter tabs (Remote / Hybrid / All), and stipend sorting.
-  - `/jobs/:id` — Comprehensive two-column internship details page with key metrics, responsibilities, required skills, learning outcomes, eligibility, and sticky summary apply card.
-  - `/contact` — Student support and employer inquiry page with validated direct messaging and student FAQ cards.
-- **Interactive Apply Flow**:
-  - Clean application modal accessible directly from any internship card or details page.
-  - Form validation for Full Name, Email, Phone, Resume file upload, and Statement of Interest.
-  - Realistic submission feedback with unique confirmation tracking ID.
-- **Responsive & Accessible**:
-  - 100% responsive across desktop, laptop, tablet, and mobile screens.
-  - Mobile hamburger drawer navigation.
-  - Zero horizontal overflow.
-  - Consistent 8px spacing system and accessible font hierarchy with Inter typography.
-- **Docker Support**: Containerized with `Dockerfile` and `docker-compose.yml` for instant, isolated deployment.
+**DG Interns Hub** is a frontend discovery platform built for the Week 7 internship task. It provides an intuitive, trustworthy, and student-friendly experience for discovering curated internship opportunities across modern domains like Web Development, React, Java, Python, AI/ML, UI/UX, Data Analytics, and Cyber Security.
+
+Students can browse listings, filter by domain and work mode, inspect detailed role requirements and learning outcomes, and submit job applications through a validated application flow.
+
+---
+
+## 🌟 Features
+
+- **Original Professional Design**: Clean, light career-portal interface designed with corporate standards (no AI chatbots, excessive gradients, glowing cards, or floating blobs).
+- **Client-Side Routing**: Complete multi-page application powered by React Router DOM.
+- **Dynamic Search**: Real-time filtering across job title, company name, skill tags, and location.
+- **Category Filter Tabs**: One-click filtering across 8 tech domains (All, Web Development, React, Java, Python, AI/ML, UI/UX, Data Analytics, Cyber Security) with live count indicators.
+- **Work Mode Filters**: Filter by Remote, Hybrid, or All modes.
+- **Stipend Sorting**: Toggle between default featured order and highest stipend.
+- **Job Details View**: 2-column desktop layout with detailed role responsibilities, required skills, learning outcomes, eligibility, perks, and a sticky summary card.
+- **Interactive Application Modal**:
+  - Accessible modal dialog for applying to any listed internship.
+  - Comprehensive field validation (Name, Email, Phone, Resume file upload, and Statement of Interest).
+  - Realistic submission feedback showing confirmation ID and success message.
+  - Automatic form reset.
+- **Get in Touch Contact Page**:
+  - Validated contact form with instant success confirmation.
+  - Support contact cards for Email, LinkedIn, GitHub, and Headquarters location.
+  - Student FAQ section answering common internship queries.
+- **Responsive Layout**: Designed for screens from 375px mobile up to 1920px desktop with zero horizontal scrolling and an interactive mobile hamburger menu.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **React 19** (Functional Components, Hooks)
-- **Vite 8** (High-speed development & bundling)
-- **React Router DOM v7** (Declarative client-side routing)
-- **Vanilla CSS** (Custom design tokens, variables, responsive grids, zero heavy utility bloat)
-- **Lucide React** (Crisp, modern iconography)
-- **Docker & Docker Compose** (Containerization on port `5173`)
+- **React JS** (Functional Components, Hooks: `useState`, `useParams`, `useNavigate`, `useMemo`, `useEffect`)
+- **Vite** (Next-generation frontend tooling & dev server)
+- **JavaScript (ES6+)**
+- **React Router DOM** (`BrowserRouter`, `Routes`, `Route`, `Link`, `NavLink`)
+- **Vanilla CSS** (Custom CSS variables, responsive flexbox & grid system)
+- **Docker & Docker Compose** (Containerized execution on Node 22 Alpine)
 
 ---
 
@@ -40,6 +49,7 @@ A modern, production-ready Job & Internship Landing Website designed for college
 
 ```
 ├── .dockerignore
+├── .gitignore
 ├── Dockerfile
 ├── docker-compose.yml
 ├── index.html
@@ -48,12 +58,12 @@ A modern, production-ready Job & Internship Landing Website designed for college
 ├── README.md
 └── src/
     ├── components/
-    │   ├── ApplicationForm.jsx   # Interactive application modal with validation & success screen
+    │   ├── ApplicationForm.jsx   # Application modal with validation and success screen
     │   ├── FeatureCard.jsx       # Value proposition cards for Why Choose Us
     │   ├── FilterBar.jsx         # Category filter pills with count badges
-    │   ├── Footer.jsx            # Multi-column footer with links, contact, and domains
+    │   ├── Footer.jsx            # Multi-column footer with quick links, contact, and social
     │   ├── HowItWorks.jsx        # 3-step structured student onboarding guide
-    │   ├── JobCard.jsx           # Clean internship card with meta, skills, and actions
+    │   ├── JobCard.jsx           # Internship card with meta highlights and action buttons
     │   ├── Navbar.jsx            # Responsive header with mobile hamburger drawer
     │   └── SearchBar.jsx         # Search input with clear button
     │
@@ -64,7 +74,7 @@ A modern, production-ready Job & Internship Landing Website designed for college
     │   └── Contact.jsx           # Support desk, contact cards, validated form, and FAQ
     │
     ├── data/
-    │   └── jobs.js               # 8 realistic, comprehensive internship opportunities & platform stats
+    │   └── jobs.js               # 8 realistic sample opportunities and platform datasets
     │
     ├── App.jsx                   # Router setup, ScrollToTop, and global modal state
     ├── App.css                   # Custom responsive styling and design system
@@ -74,69 +84,42 @@ A modern, production-ready Job & Internship Landing Website designed for college
 
 ---
 
-## 💼 Included Sample Opportunities
+## 🚀 Local Setup
 
-1. **Web Development Intern** — Nexora Cloud Solutions (Remote, ₹18,000/mo)
-2. **React JS Intern** — Apex Digital Labs (Bengaluru Hybrid, ₹25,000/mo)
-3. **Java Development Intern** — FinScale Technologies (Remote, ₹20,000/mo)
-4. **Python Development Intern** — DataSphere Analytics (Remote, ₹22,000/mo)
-5. **AI / ML Intern** — CognitiveAI Systems (Hyderabad Hybrid, ₹28,000/mo)
-6. **UI/UX Design Intern** — Prism Studio Labs (Remote, ₹18,000/mo)
-7. **Data Analytics Intern** — MetricWave Insights (Gurugram Hybrid, ₹20,000/mo)
-8. **Cyber Security Intern** — CipherShield Security (Remote, ₹24,000/mo)
+### 1. Install Dependencies
+Make sure you have Node.js (v18+) and npm installed. From the project directory, run:
 
----
-
-## 🚀 Getting Started Locally
-
-### Prerequisites
-- Node.js (v18 or higher)
-- npm (v9 or higher)
-
-### Installation & Run
-
-1. Clone or open the repository folder:
-   ```bash
-   cd "DG INTERNS HUB/WEEK 7/WEB"
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Launch the development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Open your browser at:
-   ```
-   http://localhost:5173/
-   ```
-
-### Production Build
-
-To test the production build:
 ```bash
-npm run build
-npm run preview
+npm install
 ```
 
+### 2. Start the Development Server
+Run the local Vite dev server:
+
+```bash
+npm run dev
+```
+
+The application will start immediately at:
+👉 **http://localhost:5173**
+
 ---
 
-## 🐳 Running with Docker
+## 🐳 Docker Setup
 
-You can run the entire application in a Docker container using Docker Compose:
+The project includes complete Docker and Docker Compose configuration.
+
+### Run with Docker Compose
+Run the following command in the project root:
 
 ```bash
 docker compose up --build
 ```
 
-The application will be accessible at:
-```
-http://localhost:5173/
-```
+The container will build using **Node 22 Alpine** and start the application on port `5173`.
+
+Access the application in your browser at:
+👉 **http://localhost:5173**
 
 To stop the container:
 ```bash
@@ -145,6 +128,27 @@ docker compose down
 
 ---
 
-## 📄 License & Attribution
+## 🧭 Routes
 
-Built for **DG Interns Hub** — Empowering students and freshers to launch real tech careers with confidence.
+| Route | Page | Description |
+|---|---|---|
+| `/` | **Home** | Landing page with Hero, Stats, Featured Internships, Why Choose Us, How It Works, and Final CTA. |
+| `/jobs` | **Jobs** | Full internship discovery directory with search bar, category filters, and 8 realistic opportunities. |
+| `/jobs/:id` | **Job Details** | Comprehensive 2-column role view with responsibilities, skills, learning, perks, and apply CTA. Includes invalid ID fallback with "Back to Jobs" button. |
+| `/contact` | **Contact** | Support and inquiry desk with validated message form, contact cards, and student FAQs. |
+
+---
+
+## 🔮 Future Improvements
+
+1. **Saved Internships**: Add localStorage-based bookmarking so students can save opportunities to review later.
+2. **Resume Preview**: Enable in-browser PDF preview when students upload their resume in the application modal.
+3. **Application Tracker**: A dedicated student dashboard displaying the status of all submitted applications.
+4. **Email Notifications**: Integration with an email service to send automated application receipts to students.
+
+---
+
+## 👨‍💻 Author
+
+Built for **DG Interns Hub** — Week 7 Internship Submission.
+Empowering college students and freshers to launch real tech careers with confidence.

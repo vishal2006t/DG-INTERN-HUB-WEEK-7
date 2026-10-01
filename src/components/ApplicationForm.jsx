@@ -160,26 +160,26 @@ const ApplicationForm = ({ job, isOpen, onClose }) => {
               <div className="success-icon-wrap">
                 <CheckCircle2 size={48} className="text-success" />
               </div>
-              <h4 className="success-title">Application Submitted!</h4>
+              <h4 className="success-title">Application Submitted Successfully!</h4>
               <p className="success-message">
-                Thank you, <strong>{formData.fullName}</strong>. Your application for <strong>{job ? job.title : 'this internship'}</strong> at <strong>{job ? job.company : 'the partner company'}</strong> has been received successfully.
+                Thank you for applying. We will get back to you soon.
               </p>
               <div className="success-details-card">
                 <div className="success-detail-row">
-                  <span className="detail-label">Confirmation ID:</span>
-                  <span className="detail-value">DGI-{Math.floor(100000 + Math.random() * 900000)}</span>
+                  <span className="detail-label">Internship:</span>
+                  <span className="detail-value">{job ? job.title : 'Selected Opportunity'}</span>
                 </div>
                 <div className="success-detail-row">
-                  <span className="detail-label">Contact Email:</span>
-                  <span className="detail-value">{formData.email}</span>
+                  <span className="detail-label">Company:</span>
+                  <span className="detail-value">{job ? job.company : 'Partner Company'}</span>
                 </div>
                 <div className="success-detail-row">
                   <span className="detail-label">Status:</span>
-                  <span className="badge badge-blue">Under Review</span>
+                  <span className="badge badge-green">Received</span>
                 </div>
               </div>
               <p className="success-notice">
-                The hiring team reviews applicants on a rolling basis. You will receive an email update within 3 business days regarding the interview schedule.
+                Our student review team will evaluate your profile and contact you via email regarding the next steps.
               </p>
               <button 
                 type="button" 

@@ -46,6 +46,9 @@ const Footer = () => {
             </div>
             <span className="footer-brand-name">DG Interns Hub</span>
           </div>
+          <p className="footer-tagline-statement" style={{ fontWeight: 600, color: '#FFFFFF', marginBottom: '0.5rem', fontSize: '0.95rem' }}>
+            Build Skills. Gain Experience. Start Your Career.
+          </p>
           <p className="footer-description">
             A dedicated internship and career launchpad designed for college students, freshers, and early-career tech enthusiasts. Discover real-world projects, verified mentorship, and guaranteed stipends.
           </p>
@@ -80,22 +83,16 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div className="footer-col">
-          <h4 className="footer-col-title">Navigation</h4>
+          <h4 className="footer-col-title">Quick Links</h4>
           <ul className="footer-links-list">
             <li>
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/jobs">Explore Internships</Link>
+              <Link to="/jobs">Jobs</Link>
             </li>
             <li>
-              <Link to="/contact">Contact & Support</Link>
-            </li>
-            <li>
-              <a href="/#how-it-works">How It Works</a>
-            </li>
-            <li>
-              <a href="/#why-us">Why DG Interns Hub</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
@@ -108,7 +105,7 @@ const Footer = () => {
               <Link to="/jobs?category=Web+Development">Web Development</Link>
             </li>
             <li>
-              <Link to="/jobs?category=React+JS">React JS & Frontend</Link>
+              <Link to="/jobs?category=React">React JS</Link>
             </li>
             <li>
               <Link to="/jobs?category=Python">Python & Backend</Link>
@@ -152,7 +149,7 @@ const Footer = () => {
       <div className="footer-bottom-bar">
         <div className="container footer-bottom-inner">
           <p className="copyright-text">
-            © {new Date().getFullYear()} DG Interns Hub. Built for ambitious students and freshers. All rights reserved.
+            © 2026 DG Interns Hub. All rights reserved.
           </p>
           <div className="footer-legal-links">
             <span>Student First</span>
