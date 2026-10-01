@@ -34,6 +34,8 @@ const GitHubIcon = ({ size = 18 }) => (
   </svg>
 );
 
+import dgLogo from '../assets/dg-interns-hub-logo.png';
+
 const Footer = () => {
   return (
     <footer className="site-footer">
@@ -41,9 +43,12 @@ const Footer = () => {
         {/* Brand & mission */}
         <div className="footer-col footer-brand-col">
           <div className="footer-brand">
-            <div className="brand-icon-box">
-              <Briefcase className="brand-icon" size={20} />
-            </div>
+            <img 
+              src={dgLogo} 
+              alt="DG Interns Hub Logo" 
+              className="footer-logo-img"
+              style={{ height: '46px', width: 'auto', objectFit: 'contain', borderRadius: '50%', backgroundColor: '#FFFFFF', padding: '2px' }}
+            />
             <span className="footer-brand-name">DG Interns Hub</span>
           </div>
           <p className="footer-tagline-statement" style={{ fontWeight: 600, color: '#FFFFFF', marginBottom: '0.5rem', fontSize: '0.95rem' }}>
