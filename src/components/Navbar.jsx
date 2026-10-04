@@ -10,9 +10,13 @@ const Navbar = () => {
 
   // Check if session has already experienced the intro animation
   const [introState, setIntroState] = useState(() => {
-    if (typeof window !== 'undefined') {
-      const seen = sessionStorage.getItem('dg_logo_intro_seen');
-      return seen ? 'done' : 'init';
+    try {
+      if (typeof window !== 'undefined' && window.sessionStorage) {
+        const seen = window.sessionStorage.getItem('dg_logo_intro_seen');
+        return seen ? 'done' : 'init';
+      }
+    } catch {
+      return 'done';
     }
     return 'done';
   });
@@ -79,7 +83,11 @@ const Navbar = () => {
     // Step 3: Animation completes, settle permanently into navbar (~1.48s total)
     const timerDone = setTimeout(() => {
       setIntroState('done');
-      sessionStorage.setItem('dg_logo_intro_seen', 'true');
+      try {
+        if (typeof window !== 'undefined' && window.sessionStorage) {
+          window.sessionStorage.setItem('dg_logo_intro_seen', 'true');
+        }
+      } catch {}
     }, 1480);
 
     return () => {
